@@ -3,7 +3,7 @@ namespace :sanitation do
   task :lines do
     puts ""
     puts "== using cane to check line length =="
-    system("cane --no-abc --style-glob 'lib/**/*.rb' --no-doc")
+    system("cane --no-abc --style-glob 'lib/**/*.rb' --no-doc --style-measure 100")
     puts "== done checking line length =="
     puts ""
   end
